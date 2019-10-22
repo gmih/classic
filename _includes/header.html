@@ -1,0 +1,32 @@
+<body class="{{ page.layout }}">
+
+  <div class="site-wrapper">
+      {% if page.layout == "default" %}
+      <header class="main-header blend-multiply background-image">
+      {% elsif page.layout == "page" %}
+      <header class="page-header">
+      {% endif %}
+      <nav class="main-nav clearfix">
+        <a href="https://gmihguild.com" class="blog-logo"><img class="logo-image" src="../images/gmih-logo.svg"></a>
+        <div class="nav-container">
+          <a href="https://www.warcraftlogs.com/guild/id/127818" class="menu-button">Logs &rarr;</a>
+          <a href="https://discordapp.com/invite/HB56KdT" class="menu-button">Discord &rarr;</a>
+          <a href="../about/" class="menu-button">About</a>
+          <a href="../raiding/" class="menu-button">Raiding</a>
+          <a href="../apply/" class="menu-button special-nav-button">Apply</a>
+        </div>
+      </nav>
+      <div class="vertical">
+        <div class="main-header-content inner">
+        {% if page.url == "/" %}
+          <h1 class="page-title"><span class="light-text">Great Moments</span> <span class="accent-text break-small">in History</span></h1>
+          <h2 class="page-description">Proudmoore - US</h2>
+          <a class="typeform-share button gmih header-button" href="../apply/">Apply Now</a>
+        </div>
+      </div>
+        <a href="#content" data-offset="-45" class="scroll-down icon-arrow-left"><span class="hidden">Scroll Down</span></a>
+        {% else %}
+          <h1 class="page-title">{{ page.title }}</h1>
+        {% endif %}
+    </header>
+

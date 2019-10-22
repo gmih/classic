@@ -1,0 +1,1244 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Our variables
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$headline-font-family: Cinzel, Georgia, serif;
+
+$spacing-unit:     30px;
+
+$text-color:       #f8f8f2;
+$text-color-dark: #070f19;
+$background-color: #070f19;
+$background-color-light: #202830;
+$brand-color:      #4A90E2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+@mixin button-bg($bg) {
+  background: $bg;
+  border-color: $bg;
+  &:hover {
+    background: darken($bg, 10%);
+    border-color: darken($bg, 10%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+    border-color:darken($bg,25%);
+  }
+}
+
+/* ==========================================================================
+     Table of Contents
+     ========================================================================== */
+
+/*
+
+        0.  Normalize
+        1.  Icons
+        2.  General
+        3.  Utilities
+        4.  General
+        5.  Single Post
+        6.  Tag Archive
+        7.  Read Next
+        8.  Third Party Elements
+        9.  Pagination
+        10.  Footer
+        11. Media Queries (Tablet)
+        12. Media Queries (Mobile)
+        13. Animations
+
+*/
+
+/* ==========================================================================
+     0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
+     ========================================================================== */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* ==========================================================================
+     1. Icons - Sets up the icon font and respective classes
+     ========================================================================== */
+
+/* Import the font file with the icons in it */
+
+@font-face {
+    font-family: "casper-icons";
+    src: url("../fonts/casper-icons.eot?v=1");
+    src: url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"), url("../fonts/casper-icons.woff?v=1") format("woff"), url("../fonts/casper-icons.ttf?v=1") format("truetype"), url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply these base styles to all icons */
+
+[class*=" icon-"]:before {
+    font-family: "casper-icons", "Open Sans", sans-serif;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: relative;
+    bottom: 7px;
+    line-height: 1;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Each icon is created by inserting the correct character into the
+     content of the :before pseudo element. Like a boss. */
+
+.icon-arrow-left:before {
+    content: "\f605";
+}
+
+/*
+        IMPORTANT: When making any changes to the icon font, be sure to increment
+        the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
+        This forces browsers to download the new font file.
+*/
+
+/* ==========================================================================
+     2. General - Setting up some base styles
+     ========================================================================== */
+
+html {
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    font-size: 1rem;
+    line-height: 1.6875;
+    color: $text-color;
+    -webkit-font-feature-settings: 'kern' 1;
+    -moz-font-feature-settings: 'kern' 1;
+    -o-font-feature-settings: 'kern' 1;
+    text-rendering: geometricPrecision;
+}
+
+::-moz-selection {
+    background: #D6EDFF;
+}
+
+::selection {
+    background: #D6EDFF;
+}
+
+h1,
+h2, h3, h4, h5, h6 {
+    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    color: $text-color;
+    line-height: 1.15em;
+    margin: 0 0 0.4em 0;
+    font-family: $headline-font-family;
+    text-rendering: geometricPrecision;
+}
+
+h1 {
+    font-size: 2rem;
+    text-indent: -3px;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    color: #4A90E2;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    color: #4A90E2;
+}
+
+h4 {
+    color: #4A90E2;
+    font-size: 1.25rem;
+}
+
+a {
+    color: $brand-color;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: $text-color;
+}
+
+p {
+    -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+    -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+    margin: 0 0 1.75em 0;
+    text-rendering: geometricPrecision;
+}
+
+img {
+    max-width:100%;
+    border: 5px solid $background-color;
+}
+
+/* When a video is inside the fitvids wrapper, drop the
+margin on the iframe, cause it breaks stuff. */
+
+/* ==========================================================================
+     3. Utilities - These things get used a lot
+     ========================================================================== */
+
+/* Clears shit */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* Hides shit */
+
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+}
+
+/* Creates a responsive wrapper that makes our content scale nicely */
+
+.inner {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: auto;
+}
+
+
+/* Wraps the main content & footer */
+
+.site-wrapper {
+    position: relative;
+    z-index: 10;
+    min-height: 100%;
+    background: $background-color;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.page .site-footer {
+    background: $background-color;
+}
+
+/* ==========================================================================
+     4. General - The main styles for the the theme
+     ========================================================================== */
+
+.accent-text {
+    color: $brand-color;
+}
+
+.light-text {
+    color: $text-color;
+}
+
+.break-small {
+    display:block;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.site-wrapper {overflow:hidden;}
+
+.home-section {
+    padding-bottom: 100px;
+}
+
+.home-section.raiding, .site-footer {
+    background: $background-color;
+}
+
+.home-section.raiding:before, .site-footer:before {
+    content:"";
+    display:block;
+    background-image: url('../images/dark1.png');
+    width: 2500px;
+    height: 100px;
+    background-size: contain;
+    position: relative;
+    top: -75px;
+    margin-bottom: -100px;
+}
+
+.home-section.about,
+.home-section.recruitment,
+.home-section.progression {
+    background: $background-color-light;
+}
+
+.home-section.about:before,
+.home-section.recruitment:before,
+.home-section.progression:before,
+.page .page-content:before {
+    content:"";
+    display:block;
+    background-image: url('../images/light2.png');
+    width: 2500px;
+    height: 100px;
+    background-size: contain;
+    position: relative;
+    top: -75px;
+    margin-bottom: -100px;
+}
+
+.boss-images {
+    text-align:center;
+}
+
+.boss-image-container {
+    position: relative;
+    margin:5px;
+    display:inline-block;
+    width:86px;
+    vertical-align:top;
+}
+
+.boss-image {
+    border:1px solid $brand-color;
+
+}
+
+.defeated {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='%234A90E2' stroke-width='3'/><path d='M0 0 L100 100 ' stroke='%234A90E2' stroke-width='3'/></svg>");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: 100% 100%, auto;
+        width: 82px;
+        height:82px;
+        left: 2px;
+        position:absolute;
+        z-index:20;
+}
+
+.boss-image-text {
+        font-size: 10px;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        line-height: 1.3;
+}
+
+
+.raid-instance {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.raid-image {
+    width: 150px;
+    height: 150px;
+    background: $background-color;
+    position: relative;
+}
+
+.raid-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    background: rgba(7, 15, 25, 0.5);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.meter-with-labels {
+    display:none;
+}
+
+@media screen and (min-width:961px) {
+
+    .meter-with-labels {
+        display:block;
+        flex: 1;
+        position:relative;
+        margin: 20px;
+    }
+}
+
+.raid-meter-labels {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    min-height: 50px;
+    justify-content: space-between;
+}
+
+span.raid-meter-label:nth-child(even) {
+    bottom: 0px;
+    position: relative;
+    height: 80px;
+    z-index: 10;
+    padding-top: 60px;
+}
+
+span.raid-meter-label:nth-child(odd) {
+    top: -30px;
+    position: relative;
+    height: 80px;
+    z-index: 10;
+    padding-bottom: 60px;
+}
+span.raid-meter-label {    
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meter {     
+    height: 30px;
+    position: relative;
+    background: $background-color;
+    overflow: hidden;
+    margin: 10px 0;
+    outline: 5px solid $background-color;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: $brand-color;
+    -webkit-animation: progressBar 3s ease-in-out;
+            animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode:both;
+            animation-fill-mode:both; 
+}
+
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.progress-numbers {
+    font-family: $headline-font-family;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.first-number {
+    color: $brand-color;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:961px) {
+    
+    .progress-numbers {
+        font-family: $headline-font-family;
+        font-size: 1rem;
+        margin-left:0;
+    }
+
+    .first-number {
+        color: $brand-color;
+        font-size: 2rem;
+    }
+}
+/* Big cover image on the home page */
+
+.vertical {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 2rem 0;
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: $background-color no-repeat center center;
+    background-size: cover;
+    overflow: hidden;   background-position: 50% 16%;
+    background-image: url('../images/bfa-alliance.jpg');
+}
+
+
+
+.page-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: $background-color;
+    padding-bottom:100px;
+}
+
+/* Special styles when overlaid on an image*/
+
+
+
+
+.default .main-header {
+    display: flex;
+    min-height: 110vh;
+    flex-direction: column;
+}
+
+.main-header .inner {
+    width: 80%;
+}
+
+.main-nav {
+    position: relative;
+    padding: 35px 40px 0;
+    margin: 0 0 30px 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+/* Create a bouncing scroll-down arrow on homepage with cover image */
+
+
+
+.scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -17px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: $text-color;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;
+}
+
+/* Stop it bouncing and increase contrast when hovered */
+
+.scroll-down:hover {
+    color: $brand-color;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.scroll-down:focus {
+    outline:none;
+}
+
+
+@media screen and (max-height:659px) {
+    .scroll-down {
+        display:none;
+    }
+}
+
+/* Put a semi-opaque radial gradient behind the icon to make it more visible
+     on photos which happen to have a light background. */
+
+/* Hide when there's no cover image or on page2+ */
+
+/* Appears in the top left corner of your home page */
+
+.blog-logo {
+    display: block;
+    background: none !important;
+    /* Makes sure there is never a background */
+    border: none !important;
+    /* Makes sure there is never a border */
+    text-transform: uppercase;
+    line-height: 42px;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: $headline-font-family;
+}
+
+.logo-image {
+    width:100px;
+    border:none;
+}
+
+@media (min-width: 625px) {
+    .blog-logo {
+        float: left;
+    }
+
+    .nav-container {
+        float: right;
+    }
+}
+
+.menu-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 38px;
+    padding: 0 15px;
+    opacity: 1;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    font-family: "Open Sans", sans-serif;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.special-nav-button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $text-color;
+}
+
+.menu-button:before {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+}
+
+.menu-button:hover {
+    background: $text-color;
+    color: $text-color-dark;
+    font-weight: bold;
+}
+
+.menu-button:focus {
+    outline: 0;
+}
+
+
+
+/* The details of your blog. Defined in ghost/settings/ */
+
+.page-title {
+    margin: 10px 0 10px 0;
+    color: $text-color;
+}
+
+@media screen and (min-width: 481px) {
+
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight:700;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.page-content {
+    background: $background-color-light;
+    padding-bottom:50px;
+}
+
+.page-description {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: $text-color;
+    text-transform: uppercase;
+}
+
+@media (min-width: 481px) {
+    .page-description {
+        font-size: 1.3rem;
+    }
+}
+
+/* Add subtle load-in animation for content on the home page */
+
+/* Every post, on every page, gets this style on its <article> tag */
+
+.post {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 5rem 0;
+    word-wrap: break-word;
+}
+
+
+
+.home__post-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.color-accent {
+    color: $brand-color;
+}
+
+.typeform-share.button.gmih {
+    cursor: pointer;
+    color: $text-color-dark;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    float: none;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 1;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    @include button-bg($brand-color);
+    width: 140px;
+    margin-top: 4rem;
+}
+
+.typeform-share.button.gmih.header-button {
+    margin-top: 5rem;
+    margin-bottom:8rem;
+}
+
+.small-text {
+    font-size:0.8rem;
+}
+
+.divider {
+    margin: 3rem 0;
+    border-color: rgba(255,255,255,0.3);
+}
+
+// Recruitment Icons
+
+.recruitment-icons {
+    padding:0;
+    list-style-type:none;
+    margin: 3rem 0;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: row;
+     flex-direction: row;
+     -webkit-align-items: flex-start;
+     align-items: flex-start;
+     -webkit-justify-content: center;
+     justify-content: center;
+     flex-flow: row wrap;
+}
+
+.recruitment-icon {
+    text-align:center;
+    font-size:14px;
+    width: 50%;
+    color: $brand-color;
+    margin-bottom: 3rem
+}
+
+@media (min-width: 480px) {
+    .recruitment-icon {
+        width: 33%;
+    }
+}
+
+@media (min-width: 786px) {
+    .recruitment-icon {
+        width: 25%;
+    }
+}
+
+.recruitment-image-wrap {
+    display:inline-block;
+}
+
+.recruitment-image {
+    border:none;
+}
+
+.class {
+    display:block;
+    line-height:1;
+}
+
+.solo.class {
+    margin-top: 12px;
+}
+
+
+// Application
+
+.gmih-form-list {
+    padding-left: 0;
+    list-style-type:none;
+}
+.gmih-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    background: $background-color-light;
+    padding: 10px;
+    margin: 10px 0 40px;
+    font-family: $base-font-family;
+    color: $text-color;
+}
+
+.gmih-textarea {
+    min-height: 200px;
+}
+
+.gmih-input:focus {
+    outline: none;
+    border-color: $brand-color;
+}
+
+.gmih-submit {
+    cursor: pointer;
+    color: $text-color-dark;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    float: none;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 1;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    @include button-bg($brand-color);
+}
+
+.thanks {
+    text-align:center;
+}
+
+.gmih-submit__info {
+    margin-top: 40px;
+}
+
+/* Table of Contents */
+
+.on-this-page {
+    font-size: 1.5rem;
+    font-family: $headline-font-family;
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+.on-this-page__list {
+    margin-top: 0;
+}
+
+.on-this-page__list li {
+    margin: 0.5rem 0;
+}
+
+/* ==========================================================================
+     5. Single Post - When you click on an individual post
+     ========================================================================== */
+
+/* Stop elements, such as img wider than the post content, from
+     creating horizontal scroll - slight hack due to imperfections
+     with browser width % calculations and rounding */
+
+/* Tweak the .post wrapper style */
+
+/* Kill that stylish little circle that was on the border, too */
+
+/* Keep images centered, and allow images wider than the main
+     text column to break out. */
+
+/* The author credit area after the post */
+
+/* list of author links - location / url */
+
+/* Create some space to the right for the share links */
+
+/* Drop the share links in the space to the right.
+     Doing it like this means it's easier for the author bio
+     to be flexible at smaller screen sizes while the share
+     links remain at a fixed width the whole time */
+
+/* ==========================================================================
+     6. Author profile
+     ========================================================================== */
+
+/* Add a little circle in the middle of the border-bottom */
+
+/* Location, website, and link */
+
+/* Turn off meta for page2+ to make room for extra
+     pagination prev/next links */
+
+/* ==========================================================================
+     7. Read More - Next/Prev Post Links
+     ========================================================================== */
+
+/* Special styles for posts with no cover images */
+
+/* if there are two posts without covers, put a border between them */
+
+/* Correctly position site-footer when next to the .read-next container */
+
+/* ==========================================================================
+     8. Third Party Elements - Embeds from other services
+     ========================================================================== */
+
+/* Github */
+
+/* Pastebin */
+
+/* ==========================================================================
+     9. Pagination - Tools to let you flick between pages
+     ========================================================================== */
+
+/* The main wrapper for our pagination links */
+
+/* Push the previous/next links out to the left/right */
+
+/* On page2+ make all the headers smaller */
+
+/* On page2+ show extra pagination controls at the top of post list */
+
+/* ==========================================================================
+     10. Footer - The bottom of every page
+     ========================================================================== */
+
+.site-footer {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-size: 12px;
+    flex: 1;
+}
+
+.site-footer__container {
+    padding: 0rem 15px 3rem;
+    position: relative;
+}
+
+.site-footer a {
+    color: $brand-color;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    color: $text-color;
+}
+
+.poweredby {
+    display: block;
+    width: 45%;
+    float: right;
+    text-align: right;
+}
+
+.copyright {
+    display: block;
+    float: right;
+}
+
+.page .copyright {
+    color: $text-color;
+}
+
+/* ==========================================================================
+     11. Media Queries - Smaller than 900px
+     ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+    .main-header {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+}
+
+/* ==========================================================================
+     12. Media Queries - Smaller than 500px
+     ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+
+    .main-nav {
+        padding: 5px;
+    }
+
+    .menu-button:hover {
+        color: $text-color;
+        border-color: $background-color;
+        background: $background-color;
+    }
+
+    .inner {
+        width: auto;
+    }
+
+    .post {
+        width: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 4rem 0;
+        line-height: 1.65em;
+    }
+}
+
+.no-list {
+    list-style-type:none;
+    padding:0;
+}
+
+// Header Links
+
+/*!
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@media only screen and (min-width: 501px) {
+    .docs h2 {
+        margin-left: -1.5rem;
+    }
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+        src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .fa {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .fa-link:before {
+        content: "\f0c1";
+    }
+    /*
+     * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
+     * http://ben.balter.com/2014/03/13/pages-anchor-links/
+     */
+    .header-link {
+        position: relative;
+        right: 0.5rem;
+        bottom: 2px;
+        font-size: 1.5rem;
+        color: $brand-color;
+    }
+
+    .header-link:hover {
+        color: $brand-color;
+    }
+
+    #on-this-page .header-link {
+        display:none;
+    }
+}
+
+/* ==========================================================================
+     13. Animations
+     ========================================================================== */
+
+/* Used to fade in title/desc on the home page */
+
+/* Used to bounce .scroll-down on home page */
+
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+        transform: translateY(0) rotate(-90deg);
+    }
+
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+        transform: translateY(-10px) rotate(-90deg);
+    }
+
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+        transform: translateY(-5px) rotate(-90deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+        transform: translateY(0) rotate(-90deg);
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+        transform: translateY(-10px) rotate(-90deg);
+    }
+
+    60% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+        transform: translateY(-5px) rotate(-90deg);
+    }
+}
+
+/* ==========================================================================
+     End of file. Animations should be the last thing here. Do not add stuff
+     below this point, or it will probably fuck everything up.
+     ========================================================================== */
