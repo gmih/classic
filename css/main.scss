@@ -447,6 +447,8 @@ margin on the iframe, cause it breaks stuff. */
     top: 0;
     background: rgba(7, 15, 25, 0.5);
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .meter-with-labels {
@@ -470,6 +472,8 @@ margin on the iframe, cause it breaks stuff. */
     flex: 1;
     min-height: 50px;
     justify-content: space-between;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 span.raid-meter-label:nth-child(even) {
@@ -517,6 +521,11 @@ span.raid-meter-label {
             animation: progressBar 3s ease-in-out;
     -webkit-animation-fill-mode:both;
             animation-fill-mode:both; 
+}
+
+
+.raid-instance:hover .raid-name, .raid-instance:hover .raid-meter-labels {
+    opacity: 1;
 }
 
 @-webkit-keyframes progressBar {
@@ -569,7 +578,10 @@ span.raid-meter-label {
     background: $background-color no-repeat center center;
     background-size: cover;
     overflow: hidden;   background-position: 50% 16%;
-    background-image: url('../images/bfa-alliance.jpg');
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+      ), url('../images/ragnaros.jpg');
 }
 
 
@@ -741,7 +753,7 @@ span.raid-meter-label {
 @media screen and (min-width: 481px) {
 
     body {
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 1.5;
     }
 
