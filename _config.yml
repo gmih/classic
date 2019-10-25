@@ -16,9 +16,10 @@
 title: Great Moments in History
 email: rissy@gmihguild.com
 description: > # this means to ignore newlines until "baseurl:"
-  Great Moments in History is a Atiesh-US raiding guild.
+  Great Moments in History is an Atiesh-US raiding guild.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://classic.gmihguild.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+permalink: /articles/:title:output_ext
