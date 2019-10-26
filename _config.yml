@@ -22,4 +22,4 @@ url: "https://classic.gmihguild.com" # the base hostname & protocol for your sit
 
 # Build settings
 markdown: kramdown
-permalink: /articles/:title:output_ext
+permalink: /articles/:slug
