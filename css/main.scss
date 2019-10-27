@@ -254,7 +254,7 @@ p {
 
 img {
     max-width:100%;
-    border: 5px solid $background-color;
+    border: 5px solid $background-color-light;
 }
 
 /* When a video is inside the fitvids wrapper, drop the
@@ -506,10 +506,10 @@ span.raid-meter-label {
 .meter {     
     height: 30px;
     position: relative;
-    background: $background-color;
+    background: $background-color-light;
     overflow: hidden;
     margin: 10px 0;
-    outline: 5px solid $background-color;
+    outline: 5px solid $background-color-light;
 }
 
 .meter span {
@@ -625,7 +625,7 @@ span.raid-meter-label {
 
 
 
-.scroll-down {
+.scroll-down.arrow {
     display: block;
     position: absolute;
     z-index: 100;
@@ -647,19 +647,19 @@ span.raid-meter-label {
 
 /* Stop it bouncing and increase contrast when hovered */
 
-.scroll-down:hover {
+.scroll-down.arrow:hover {
     color: $brand-color;
     -webkit-animation: none;
     animation: none;
 }
 
-.scroll-down:focus {
+.scroll-down.arrow:focus {
     outline:none;
 }
 
 
 @media screen and (max-height:659px) {
-    .scroll-down {
+    .scroll-down.arrow {
         display:none;
     }
 }
@@ -821,6 +821,10 @@ span.raid-meter-label {
     word-wrap: break-word;
 }
 
+.officers-post {
+    max-width: 80%;
+}
+
 
 
 .home__post-title {
@@ -836,7 +840,7 @@ span.raid-meter-label {
     cursor: pointer;
     color: $text-color-dark;
     font-weight: bold;
-    display: block;
+    display: inline-block;
     margin: auto;
     float: none;
     padding: 5px 15px;
@@ -853,7 +857,6 @@ span.raid-meter-label {
     font-weight: bold;
     text-decoration: none;
     @include button-bg($brand-color);
-    width: 140px;
     margin-top: 4rem;
 }
 
@@ -893,9 +896,12 @@ span.raid-meter-label {
     font-size:14px;
     width: 50%;
     color: $brand-color;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
 }
 
+.recruitment-image:hover {
+    transform: scale(1.1);
+}
 @media (min-width: 480px) {
     .recruitment-icon {
         width: 33%;
@@ -914,6 +920,7 @@ span.raid-meter-label {
 
 .recruitment-image {
     border:none;
+    transition: transform 1s;
 }
 
 .class {
@@ -1209,6 +1216,45 @@ span.raid-meter-label {
     #on-this-page .header-link {
         display:none;
     }
+}
+
+
+// Officers on Homepage
+.officers {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.officers li {
+    display: flex;
+    flex-direction: column;
+    background: #070f19;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.officers li:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.officers img {
+    width: 150px;
+    border:none;
+}
+
+.officers p {
+    font-size: 16px;
+    margin: 20px 0 10px;
 }
 
 /* ==========================================================================
