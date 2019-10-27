@@ -313,7 +313,8 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 
-.page .site-footer {
+.page .site-footer,
+.article .site-footer {
     background: $background-color;
 }
 
@@ -368,7 +369,8 @@ margin on the iframe, cause it breaks stuff. */
 .home-section.about:before,
 .home-section.recruitment:before,
 .home-section.progression:before,
-.page .page-content:before {
+.page .page-content:before,
+.article .page-content:before {
     content:"";
     display:block;
     background-image: url('../images/light2.png');
@@ -1106,7 +1108,8 @@ span.raid-meter-label {
     float: right;
 }
 
-.page .copyright {
+.page .copyright,
+.article .copyright {
     color: $text-color;
 }
 
