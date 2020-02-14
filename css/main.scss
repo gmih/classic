@@ -544,6 +544,7 @@ span.raid-meter-label {
     font-family: $headline-font-family;
     font-size: 2rem;
     margin-left: 20px;
+    min-width: 135px;
 }
 .first-number {
     color: $brand-color;
@@ -557,6 +558,7 @@ span.raid-meter-label {
         font-family: $headline-font-family;
         font-size: 1rem;
         margin-left:0;
+        min-width: 70px;
     }
 
     .first-number {
