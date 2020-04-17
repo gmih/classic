@@ -1,0 +1,62 @@
+---
+layout: page
+title: EPGP
+weight: 1
+nav: yes
+permalink: epgp/
+---
+<div class="tierEPGP">
+  <div class="tier1">
+
+    <h2><a class="tier-link" href="./tier1"><i class="fa fa-link"></i> Tier 1 EPGP</a></h2>
+    <table class="tier-table" id="tier1">
+      <tr class="tier-header" id="tier1-header">
+        <th>Character</th>
+        <th>EP</th>
+        <th>GP</th>
+        <th>PR</th>
+      </tr>
+    </table></div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    fetch('/epgp/t1-loot-history.json')
+    .then(
+      function(response) {
+        if (response.status !== 200) {
+          console.log('Looks like there was a problem. Status Code: ' +
+            response.status);
+          return;
+        }
+
+        response.json().then(function(data) {
+          data.roster.sort(function(a, b) {
+            return (a[1] / a[2]) - (b[1] / b[2]);
+          }).forEach(function(character) {
+            var tr = document.createElement("tr");
+            var name = document.createElement("td");
+            var ep = document.createElement("td");
+            var gp = document.createElement("td");
+            var gpLink = document.createElement("a");
+            var pr = document.createElement("td");
+            name.textContent = character[0].replace("-Atiesh", "");
+            ep.textContent = character[1];
+            gpLink.href = "./tier1?filter=" + character[0].replace("-Atiesh", "");
+            gpLink.textContent = character[2];
+            gp.appendChild(gpLink);
+            pr.textContent = parseFloat((character[1]/character[2]).toFixed(4));
+            tr.appendChild(name);
+            tr.appendChild(ep);
+            tr.appendChild(gp);
+            tr.appendChild(pr);
+            document.querySelector("#tier1-header").insertAdjacentElement('afterend', tr);
+
+          });
+        });
+      }
+    )
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
+  })
+</script>

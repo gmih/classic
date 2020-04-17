@@ -1265,6 +1265,64 @@ span.raid-meter-label {
     margin: 20px 0 10px;
 }
 
+
+// EPGP
+.tierEPGP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    th {
+        padding: 10px;
+        text-align: left;
+        border: none;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 10px;
+        border: none;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    a {
+        border-bottom: none;
+        text-decoration: none;
+    }
+}
+.tierEPGP h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.tier1 {
+    width: 50%;
+}
+
+.tierEPGP table {
+    width: 100%;
+	margin:auto;
+	border-collapse:collapse;
+}
+
+.tier-header {
+	border-bottom: 1px solid white;
+}
+.tier-table tr:nth-child(2n+1) {
+	background:#070f19;
+}
+
+.tier-link {
+    i {
+        font-size: 16px;
+        vertical-align: middle;
+    }
+}
+
+
+
 /* ==========================================================================
      13. Animations
      ========================================================================== */

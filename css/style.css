@@ -1,0 +1,34 @@
+.vertical {
+    margin: 3rem 0 5rem;
+}
+
+.search-loot {
+	max-width: 100%;
+    width: 500px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.loot-history {
+	width:100%;
+	margin:auto;
+	border-collapse:collapse;
+}
+
+.display-container > td, .column-names th {
+	padding: 5px;
+}
+
+.column-names th {
+	text-align: left;
+}
+.column-names {
+	border-bottom: 1px solid white;
+}
+.display-container:nth-child(2n+1) {
+	background:#070f19;
+}
+
+.epgp .page-header {
+	padding-bottom: 0;
+}

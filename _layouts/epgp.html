@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+
+  <body class="{{ page.layout }}">
+
+    <div class="site-wrapper">
+        {% if page.layout == "default" %}
+        <header class="main-header blend-multiply background-image">
+        {% else %}
+        <header class="page-header">
+        {% endif %}
+        <nav class="main-nav clearfix">
+          <a href="https://classic.gmihguild.com" class="blog-logo"><img class="logo-image" src="{{ site.baseurl }}/images/gmih-logo.svg"></a>
+          <div class="nav-container">
+            <a href="https://classic.warcraftlogs.com/guild/id/479857" class="menu-button">Logs &rarr;</a>
+            <a href="https://discordapp.com/invite/HB56KdT" class="menu-button">Discord &rarr;</a>
+            <a href="{{ site.baseurl }}/about/" class="menu-button">About</a>
+            <a href="{{ site.baseurl }}/raiding/" class="menu-button">Raiding</a>
+            <a href="{{ site.baseurl }}/epgp/" class="menu-button">EPGP</a>
+            <a href="{{ site.baseurl }}/apply/" class="menu-button special-nav-button">Apply</a>
+          </div>
+        </nav>
+        <div class="vertical">
+          <div class="main-header-content inner">
+            <h1 class="page-title">{{ page.title }}</h1>
+            
+<div class="search-area">
+  <input class="search-loot" type="text" id="search-loot" placeholder="Filter by character or loot...">
+  </div>
+      </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="post">
+          <article class="post-content docs">
+            {{ content }}
+          </article>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="site-footer clearfix">
+			<div class="site-footer__container">   
+				<section class="copyright"><a href="http://gmihguild.com">Great Moments in History</a> &copy; <span id="copyright-date"><span></section>
+			</div>
+        </footer>
+
+	</div>
+
+		<script>
+		document.getElementById('copyright-date').innerHTML = new Date().getFullYear();
+		</script>
+    <script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
+
+		<script type="text/javascript" src="{{ site.baseurl }}/js/epgp.js"></script>
+
+
+
+		<script>
+		// tooltip options
+		var wowhead_tooltips = {
+			'colorlinks': true,
+			'iconizelinks': true,
+			'renamelinks': true,
+		};
+
+		$(document).ready(function(){
+		    // update tooltips
+		    if(typeof $WowheadPower == 'undefined'){
+		    	$.getScript('//wow.zamimg.com/widgets/power.js');
+		    } else {
+		    	$WowheadPower.refreshLinks();
+		    }
+		});
+    </script>
+    
+    
+
+
+	
+  <script>
+
+    
+
+
+    $(document).ready(function() {
+        LootHistory.init("/epgp/t1-loot-history.json");
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var filter = urlParams.get('filter');
+        var searchLoot = $("#search-loot");
+        searchLoot.val(filter);
+    });
+      </script>
+  </body>
+</html>
