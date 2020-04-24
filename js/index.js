@@ -107,3 +107,12 @@ document.onreadystatechange = function () {
     }
   }
 };
+
+var audio = new Audio('/audio/boomkin.mp3');
+document.querySelector("#boomkin").addEventListener('click', function(e) {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
