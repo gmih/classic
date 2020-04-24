@@ -43,36 +43,39 @@ LootHistory = {
 		for (var i=0; i<items.length; i++) {
 
 			var item = items[i];
+			if (item[1] !== 'EP') {
 
-			var displayContainer = $('<tr>', {
-				"class": "display-container"
-			}).insertAfter($('#loot-history'));
 
-			var displayDate = $('<td>', {
-				"class": "display-date",
-				"data-timestamp": item[0],
-				"text": LootHistory.parseDate(item[0])
-			}).appendTo(displayContainer);
-
-			var displayName = $('<td>', {
-				"class": "display-name",
-				"text": LootHistory.stripName(item[1])
-			}).appendTo(displayContainer);
-
-			var displayLink = $('<td>', {
-				"class": "display-link"
-			}).appendTo(displayContainer);
-
-			var displayItem = $('<a>', {
-				"class": "display-item",
-				"href": LootHistory.formatItem(item[2]),
-				"text": LootHistory.formatItem(item[2])
-			}).appendTo(displayLink);
-
-			var displayGP = $('<td>', {
-				"class": "display-gp",
-				"text": item[3]
-			}).appendTo(displayContainer);
+				var displayContainer = $('<tr>', {
+					"class": "display-container"
+				}).insertAfter($('#loot-history'));
+	
+				var displayDate = $('<td>', {
+					"class": "display-date",
+					"data-timestamp": item[0],
+					"text": LootHistory.parseDate(item[0])
+				}).appendTo(displayContainer);
+	
+				var displayName = $('<td>', {
+					"class": "display-name",
+					"text": LootHistory.stripName(item[1])
+				}).appendTo(displayContainer);
+	
+				var displayLink = $('<td>', {
+					"class": "display-link"
+				}).appendTo(displayContainer);
+	
+				var displayItem = $('<a>', {
+					"class": "display-item",
+					"href": LootHistory.formatItem(item[2]),
+					"text": LootHistory.formatItem(item[2])
+				}).appendTo(displayLink);
+	
+				var displayGP = $('<td>', {
+					"class": "display-gp",
+					"text": item[3]
+				}).appendTo(displayContainer);
+			}
 		}
 
 
