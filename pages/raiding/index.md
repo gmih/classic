@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: raiding
 title: Raiding
 weight: 2
 nav: yes
