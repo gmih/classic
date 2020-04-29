@@ -90,7 +90,7 @@
 
 
     $(document).ready(function() {
-        LootHistory.init("/epgp/t1-loot-history.json");
+        LootHistory.init("/epgp/" + document.querySelector("table.loot-history").id + ".json");
         var queryString = window.location.search;
         var urlParams = new URLSearchParams(queryString);
         var filter = urlParams.get('filter');
