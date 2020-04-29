@@ -1275,10 +1275,15 @@ span.raid-meter-label {
 
 
 // EPGP
+
+
+.epgp-page {
+    max-width: 1400px;
+}
 .tierEPGP {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 
     th {
         padding: 10px;
@@ -1306,7 +1311,12 @@ span.raid-meter-label {
 }
 
 .tier1 {
-    width: 50%;
+    width: 40%;
+
+    @media screen and (max-width: 980px) {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 .tierEPGP table {
@@ -1333,6 +1343,10 @@ span.raid-meter-label {
     text-align: center;
     padding-top: 50px;
 }
+
+
+
+
 
 
 /* ==========================================================================
