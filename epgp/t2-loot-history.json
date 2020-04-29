@@ -1,1 +1,589 @@
-{"guild":"Great Moments in History","region":"us","min_ep":0,"base_gp":1,"roster":[["Aninyabank-Atiesh",14,1],["Aspira-Atiesh",16,1],["Ignoti-Atiesh",6,1],["Crowlie-Atiesh",11,1],["Noxin-Atiesh",13,1],["Msmurder-Atiesh",8,1],["Rhizzoh-Atiesh",7,1],["Diala-Atiesh",29,1],["Kharapos-Atiesh",8,1],["Athelasa-Atiesh",30,1],["Sbc-Atiesh",11,1],["Seriph-Atiesh",10,1],["Wandrenloot-Atiesh",10,1],["Blixon-Atiesh",11,1],["Fenrayloot-Atiesh",14,1],["Muzzleload-Atiesh",9,1],["Nemyhz-Atiesh",13,1],["Koyori-Atiesh",11,1],["\u00D5h-Atiesh",2,1],["Pilcher-Atiesh",14,1],["Aggravain-Atiesh",11,1],["Badow-Atiesh",13,1],["Aeshloot-Atiesh",13,1],["Orduni-Atiesh",8,1],["Protoplast-Atiesh",20,1],["Milou-Atiesh",17,1],["Wrenleeloot-Atiesh",8,1],["Ulliealt-Atiesh",2,1],["Risque-Atiesh",11,1],["Racheleka-Atiesh",19,1],["Dacien-Atiesh",11,1],["Sallionsalt-Atiesh",18,1],["Selectivend-Atiesh",4,1],["Exanimo-Atiesh",19,1],["Keeb-Atiesh",16,1],["Shackletonn-Atiesh",8,1]],"decay_p":20,"loot":[[1588120736,"EP","Msmurder-Atiesh","Aesir PR",8]],"timestamp":1588120746,"extras_p":100,"realm":"Atiesh"}
+{
+    "guild": "Great Moments in History",
+    "region": "us",
+    "min_ep": 0,
+    "base_gp": 1,
+    "roster": [
+        [
+            "Aninyabank-Atiesh",
+            264,
+            201
+        ],
+        [
+            "Aspira-Atiesh",
+            266,
+            201
+        ],
+        [
+            "Ignoti-Atiesh",
+            256,
+            1
+        ],
+        [
+            "Noxin-Atiesh",
+            263,
+            1
+        ],
+        [
+            "Msmurder-Atiesh",
+            258,
+            1
+        ],
+        [
+            "Diala-Atiesh",
+            279,
+            1
+        ],
+        [
+            "Kharapos-Atiesh",
+            258,
+            1
+        ],
+        [
+            "Athelasa-Atiesh",
+            280,
+            1
+        ],
+        [
+            "Sbc-Atiesh",
+            261,
+            1
+        ],
+        [
+            "Seriph-Atiesh",
+            260,
+            201
+        ],
+        [
+            "Wandrenloot-Atiesh",
+            260,
+            1
+        ],
+        [
+            "Blixon-Atiesh",
+            261,
+            1
+        ],
+        [
+            "Aggravain-Atiesh",
+            261,
+            1
+        ],
+        [
+            "Koyori-Atiesh",
+            261,
+            201
+        ],
+        [
+            "Fenrayloot-Atiesh",
+            14,
+            1
+        ],
+        [
+            "Muzzleload-Atiesh",
+            259,
+            1
+        ],
+        [
+            "Furealtho-Atiesh",
+            250,
+            1
+        ],
+        [
+            "Racheleka-Atiesh",
+            269,
+            26
+        ],
+        [
+            "Nemyhz-Atiesh",
+            263,
+            1
+        ],
+        [
+            "\u00D5h-Atiesh",
+            252,
+            101
+        ],
+        [
+            "Pilcher-Atiesh",
+            264,
+            101
+        ],
+        [
+            "Badow-Atiesh",
+            263,
+            26
+        ],
+        [
+            "Orduni-Atiesh",
+            258,
+            101
+        ],
+        [
+            "Jonmikej-Atiesh",
+            250,
+            401
+        ],
+        [
+            "Aeshloot-Atiesh",
+            263,
+            1
+        ],
+        [
+            "Protoplast-Atiesh",
+            20,
+            1
+        ],
+        [
+            "Crowlie-Atiesh",
+            261,
+            1
+        ],
+        [
+            "Rhizzoh-Atiesh",
+            257,
+            1
+        ],
+        [
+            "Dacien-Atiesh",
+            261,
+            301
+        ],
+        [
+            "Milou-Atiesh",
+            267,
+            1
+        ],
+        [
+            "Wrenleeloot-Atiesh",
+            108,
+            101
+        ],
+        [
+            "Ulliealt-Atiesh",
+            2,
+            1
+        ],
+        [
+            "Risque-Atiesh",
+            261,
+            101
+        ],
+        [
+            "Sallionsalt-Atiesh",
+            268,
+            1
+        ],
+        [
+            "Selectivend-Atiesh",
+            254,
+            1
+        ],
+        [
+            "Exanimo-Atiesh",
+            269,
+            201
+        ],
+        [
+            "Keeb-Atiesh",
+            266,
+            1
+        ],
+        [
+            "Shackletonn-Atiesh",
+            258,
+            1
+        ],
+        [
+            "Gorrd-Atiesh",
+            250,
+            1
+        ]
+    ],
+    "decay_p": 20,
+    "loot": [
+        [
+            1588120736,
+            "EP",
+            "Msmurder-Atiesh",
+            "Aesir PR",
+            8
+        ],
+        [
+            1588122657,
+            "EP",
+            "Aesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Aggravain-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Aninya",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Aspira-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Athelasa-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Badow-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Blixon-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Crowlie-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Dacien-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Diala-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Exanimo-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Furealtho-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Gorrd-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Ignoti-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Jonmikej-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Keeb-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Kharapos-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Koyori-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Milou-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Msmurder-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Muzzleload-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Nemyhz-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Noxin-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Orduni-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Pilcher-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Racheleka-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Rhizzoh-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Risque-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Sallion",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Sbc-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Selectivend-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Seriph-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Shackletonn-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "Wandren",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588122657,
+            "EP",
+            "\u00D5h-Atiesh",
+            "Blackwing Lair",
+            250
+        ],
+        [
+            1588123189,
+            "GP",
+            "Risque-Atiesh",
+            "|cffa335ee|Hitem:16911::::::::60:::::::|h[Bloodfang Bracers]|h|r",
+            100
+        ],
+        [
+            1588123202,
+            "GP",
+            "Seriph-Atiesh",
+            "|cffa335ee|Hitem:16926::::::::60:::::::|h[Bindings of Transcendence]|h|r",
+            200
+        ],
+        [
+            1588123494,
+            "GP",
+            "Dacien-Atiesh",
+            "|cffa335ee|Hitem:16910::::::::60:::::::|h[Bloodfang Belt]|h|r",
+            100
+        ],
+        [
+            1588123505,
+            "GP",
+            "Racheleka-Atiesh",
+            "|cffa335ee|Hitem:19371::::::::60:::::::|h[Pendant of the Fallen Dragon]|h|r",
+            25
+        ],
+        [
+            1588125867,
+            "GP",
+            "Aspira-Atiesh",
+            "|cffa335ee|Hitem:19394::::::::60:::::::|h[Drake Talon Pauldrons]|h|r",
+            200
+        ],
+        [
+            1588125892,
+            "GP",
+            "Pilcher-Atiesh",
+            "|cffa335ee|Hitem:19400::::::::60:::::::|h[Firemaw's Clutch]|h|r",
+            100
+        ],
+        [
+            1588126554,
+            "GP",
+            "Orduni-Atiesh",
+            "|cffa335ee|Hitem:19434::::::::60:::::::|h[Band of Dark Dominion]|h|r",
+            100
+        ],
+        [
+            1588126935,
+            "GP",
+            "\u00D5h-Atiesh",
+            "|cffa335ee|Hitem:19438::::::::60:::::::|h[Ringo's Blizzard Boots]|h|r",
+            100
+        ],
+        [
+            1588127334,
+            "GP",
+            "Jonmikej-Atiesh",
+            "|cffa335ee|Hitem:16928::::::::60:::::::|h[Nemesis Gloves]|h|r",
+            100
+        ],
+        [
+            1588127377,
+            "GP",
+            "Badow-Atiesh",
+            "|cffa335ee|Hitem:19407::::::::60:::::::|h[Ebony Flame Gloves]|h|r",
+            25
+        ],
+        [
+            1588128031,
+            "GP",
+            "Exanimo-Atiesh",
+            "|cffa335ee|Hitem:19385::::::::60:::::::|h[Empowered Leggings]|h|r",
+            200
+        ],
+        [
+            1588128743,
+            "GP",
+            "Jonmikej-Atiesh",
+            "|cffa335ee|Hitem:16931::::::::60:::::::|h[Nemesis Robes]|h|r",
+            200
+        ],
+        [
+            1588128830,
+            "GP",
+            "Dacien-Atiesh",
+            "|cffa335ee|Hitem:19003::::::::60:::::::|h[Head of Nefarian]|h|r",
+            200
+        ],
+        [
+            1588128864,
+            "GP",
+            "Koyori-Atiesh",
+            "|cffa335ee|Hitem:19360::::::::60:::::::|h[Lok'amir il Romathis]|h|r",
+            200
+        ],
+        [
+            1588130198,
+            "GP",
+            "Jonmikej-Atiesh",
+            "|cffa335ee|Hitem:18423::::::::60:::::::|h[Head of Onyxia]|h|r",
+            100
+        ],
+        [
+            1588130865,
+            "EP",
+            "Wrenleeloot-Atiesh",
+            "Blackwing Lair",
+            100
+        ],
+        [
+            1588132246,
+            "GP",
+            "Wrenleeloot-Atiesh",
+            "Judgement Gauntlets",
+            "|cffa335ee|Hitem:16956::::::::60:::::|h[Judgement Gauntlets]|h|r",
+            100
+        ],
+        [
+            1588132277,
+            "GP",
+            "Aninyabank-Atiesh",
+            "Shroud of Pure Thought",
+            "|cffa335ee|Hitem:19430::::::::60:::::|h[Shroud of Pure Thought]|h|r",
+            200
+        ]
+    ],
+    "timestamp": 1588132324,
+    "extras_p": 100,
+    "realm": "Atiesh"
+}
