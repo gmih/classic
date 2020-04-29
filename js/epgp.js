@@ -45,36 +45,73 @@ LootHistory = {
 			var item = items[i];
 			if (item[1] !== 'EP') {
 
+				if (item[1] === 'GP') {
 
-				var displayContainer = $('<tr>', {
-					"class": "display-container"
-				}).insertAfter($('#loot-history'));
-	
-				var displayDate = $('<td>', {
-					"class": "display-date",
-					"data-timestamp": item[0],
-					"text": LootHistory.parseDate(item[0])
-				}).appendTo(displayContainer);
-	
-				var displayName = $('<td>', {
-					"class": "display-name",
-					"text": LootHistory.stripName(item[1])
-				}).appendTo(displayContainer);
-	
-				var displayLink = $('<td>', {
-					"class": "display-link"
-				}).appendTo(displayContainer);
-	
-				var displayItem = $('<a>', {
-					"class": "display-item",
-					"href": LootHistory.formatItem(item[2]),
-					"text": LootHistory.formatItem(item[2])
-				}).appendTo(displayLink);
-	
-				var displayGP = $('<td>', {
-					"class": "display-gp",
-					"text": item[3]
-				}).appendTo(displayContainer);
+
+
+					var displayContainer = $('<tr>', {
+						"class": "display-container"
+					}).insertAfter($('#loot-history'));
+		
+					var displayDate = $('<td>', {
+						"class": "display-date",
+						"data-timestamp": item[0],
+						"text": LootHistory.parseDate(item[0])
+					}).appendTo(displayContainer);
+		
+					var displayName = $('<td>', {
+						"class": "display-name",
+						"text": LootHistory.stripName(item[2])
+					}).appendTo(displayContainer);
+		
+					var displayLink = $('<td>', {
+						"class": "display-link"
+					}).appendTo(displayContainer);
+		
+					var displayItem = $('<a>', {
+						"class": "display-item",
+						"href": LootHistory.formatItem(item[3]),
+						"text": LootHistory.formatItem(item[3])
+					}).appendTo(displayLink);
+		
+					var displayGP = $('<td>', {
+						"class": "display-gp",
+						"text": item[4]
+					}).appendTo(displayContainer);
+				} else {
+
+
+
+					var displayContainer = $('<tr>', {
+						"class": "display-container"
+					}).insertAfter($('#loot-history'));
+		
+					var displayDate = $('<td>', {
+						"class": "display-date",
+						"data-timestamp": item[0],
+						"text": LootHistory.parseDate(item[0])
+					}).appendTo(displayContainer);
+		
+					var displayName = $('<td>', {
+						"class": "display-name",
+						"text": LootHistory.stripName(item[1])
+					}).appendTo(displayContainer);
+		
+					var displayLink = $('<td>', {
+						"class": "display-link"
+					}).appendTo(displayContainer);
+		
+					var displayItem = $('<a>', {
+						"class": "display-item",
+						"href": LootHistory.formatItem(item[2]),
+						"text": LootHistory.formatItem(item[2])
+					}).appendTo(displayLink);
+		
+					var displayGP = $('<td>', {
+						"class": "display-gp",
+						"text": item[3]
+					}).appendTo(displayContainer);
+				}
 			}
 		}
 
