@@ -6,197 +6,202 @@
     "roster": [
         [
             "Aninyabank-Atiesh",
-            543,
+            684,
             1
         ],
         [
             "Aspira-Atiesh",
-            515,
+            662,
             1
+        ],
+        [
+            "Ignoti-Atiesh",
+            663,
+            201
         ],
         [
             "Crowlie-Atiesh",
-            544,
-            201
+            685,
+            160
         ],
         [
             "Noxin-Atiesh",
-            541,
-            1
-        ],
-        [
-            "Msmurder-Atiesh",
-            502,
-            201
-        ],
-        [
-            "Rhizzoh-Atiesh",
-            504,
-            201
-        ],
-        [
-            "Diala-Atiesh",
-            10,
-            1
-        ],
-        [
-            "Kharapos-Atiesh",
-            500,
-            1
-        ],
-        [
-            "Athelasa-Atiesh",
-            508,
-            201
-        ],
-        [
-            "Sbc-Atiesh",
-            524,
-            1
-        ],
-        [
-            "Rigel-Atiesh",
-            250,
-            101
-        ],
-        [
-            "Seriph-Atiesh",
-            250,
-            101
-        ],
-        [
-            "Wandrenloot-Atiesh",
-            549,
-            1
-        ],
-        [
-            "Blixon-Atiesh",
-            507,
-            1
-        ],
-        [
-            "Furealtho-Atiesh",
-            500,
-            201
-        ],
-        [
-            "Fenrayloot-Atiesh",
-            38,
-            1
-        ],
-        [
-            "Muzzleload-Atiesh",
-            535,
-            101
-        ],
-        [
-            "Koyori-Atiesh",
-            504,
-            1
-        ],
-        [
-            "Racheleka-Atiesh",
-            522,
-            201
-        ],
-        [
-            "Nemyhz-Atiesh",
-            553,
-            1
-        ],
-        [
-            "\u00D5h-Atiesh",
-            500,
-            701
-        ],
-        [
-            "Pilcher-Atiesh",
-            250,
-            1
-        ],
-        [
-            "Dacien-Atiesh",
-            509,
-            1
-        ],
-        [
-            "Badow-Atiesh",
-            266,
-            201
-        ],
-        [
-            "Jonmikej-Atiesh",
-            500,
-            301
-        ],
-        [
-            "Aeshloot-Atiesh",
-            548,
-            201
-        ],
-        [
-            "Orduni-Atiesh",
-            250,
-            1
-        ],
-        [
-            "Shackletonn-Atiesh",
-            500,
-            1
-        ],
-        [
-            "Protoplast-Atiesh",
-            534,
-            1
-        ],
-        [
-            "Sallionsalt-Atiesh",
-            528,
-            1
-        ],
-        [
-            "Aggravain-Atiesh",
-            505,
+            682,
             1
         ],
         [
             "Perict-Atiesh",
-            250,
-            326
+            200,
+            260
         ],
         [
-            "Ignoti-Atiesh",
-            517,
+            "Msmurder-Atiesh",
+            651,
+            160
+        ],
+        [
+            "Rhizzoh-Atiesh",
+            653,
+            185
+        ],
+        [
+            "Diala-Atiesh",
+            8,
             1
+        ],
+        [
+            "Kharapos-Atiesh",
+            650,
+            1
+        ],
+        [
+            "Shackletonn-Atiesh",
+            400,
+            1
+        ],
+        [
+            "Athelasa-Atiesh",
+            656,
+            160
+        ],
+        [
+            "Sbc-Atiesh",
+            669,
+            301
+        ],
+        [
+            "Rigel-Atiesh",
+            200,
+            80
+        ],
+        [
+            "Seriph-Atiesh",
+            450,
+            380
+        ],
+        [
+            "Wandrenloot-Atiesh",
+            689,
+            1
+        ],
+        [
+            "Blixon-Atiesh",
+            655,
+            1
+        ],
+        [
+            "Furealtho-Atiesh",
+            650,
+            160
+        ],
+        [
+            "Fenrayloot-Atiesh",
+            130,
+            1
+        ],
+        [
+            "Muzzleload-Atiesh",
+            678,
+            80
+        ],
+        [
+            "Aeshloot-Atiesh",
+            688,
+            160
+        ],
+        [
+            "Koyori-Atiesh",
+            653,
+            1
+        ],
+        [
+            "Racheleka-Atiesh",
+            667,
+            160
+        ],
+        [
+            "Nemyhz-Atiesh",
+            692,
+            1
+        ],
+        [
+            "Erniescar-Atiesh",
+            200,
+            51
+        ],
+        [
+            "\u00D5h-Atiesh",
+            650,
+            660
+        ],
+        [
+            "Pilcher-Atiesh",
+            200,
+            1
+        ],
+        [
+            "Orduni-Atiesh",
+            200,
+            1
+        ],
+        [
+            "Jonmikej-Atiesh",
+            650,
+            240
+        ],
+        [
+            "Sallionsalt-Atiesh",
+            672,
+            1
+        ],
+        [
+            "Protoplast-Atiesh",
+            677,
+            1
+        ],
+        [
+            "Dacien-Atiesh",
+            657,
+            26
         ],
         [
             "Milou-Atiesh",
-            532,
-            101
+            675,
+            80
         ],
         [
             "Wrenleeloot-Atiesh",
-            403,
+            322,
             1
-        ],
-        [
-            "Ulliealt-Atiesh",
-            250,
-            226
         ],
         [
             "Risque-Atiesh",
-            500,
-            401
+            650,
+            420
         ],
         [
-            "Selectivend-Atiesh",
-            500,
+            "Ulliealt-Atiesh",
+            200,
+            180
+        ],
+        [
+            "Aggravain-Atiesh",
+            404,
             1
         ],
         [
+            "Selectivend-Atiesh",
+            650,
+            26
+        ],
+        [
             "Exanimo-Atiesh",
-            547,
+            687,
+            1
+        ],
+        [
+            "Gorrd-Atiesh",
+            250,
             1
         ]
     ],
@@ -672,56 +677,56 @@
             1587693068,
             "GP",
             "Muzzleload-Atiesh",
-            "||cffa335ee||Hitem:16846::::::::60:::::::||h[Giantstalker's Helmet]||h||r",
+            "||||cffa335ee||||Hitem:16846::::::::60:::::::||||h[Giantstalker's Helmet]||||h||||r",
             100
         ],
         [
             1587695980,
             "GP",
             "Seriph-Atiesh",
-            "||cffa335ee||Hitem:16815::::::::60:::::::||h[Robes of Prophecy]||h||r",
+            "||||cffa335ee||||Hitem:16815::::::::60:::::::||||h[Robes of Prophecy]||||h||||r",
             100
         ],
         [
             1587696042,
             "GP",
             "Badow-Atiesh",
-            "||cffa335ee||Hitem:17103::::::::60:::::::||h[Azuresong Mageblade]||h||r",
+            "||||cffa335ee||||Hitem:17103::::::::60:::::::||||h[Azuresong Mageblade]||||h||||r",
             200
         ],
         [
             1587696407,
             "GP",
             "Racheleka-Atiesh",
-            "||cffa335ee||Hitem:19140::::::::60:::::::||h[Cauterizing Band]||h||r",
+            "||||cffa335ee||||Hitem:19140::::::::60:::::::||||h[Cauterizing Band]||||h||||r",
             200
         ],
         [
             1587696446,
             "GP",
             "Crowlie-Atiesh",
-            "||cffa335ee||Hitem:18805::::::::60:::::::||h[Core Hound Tooth]||h||r",
+            "||||cffa335ee||||Hitem:18805::::::::60:::::::||||h[Core Hound Tooth]||||h||||r",
             200
         ],
         [
             1587697157,
             "GP",
             "Msmurder-Atiesh",
-            "||cffa335ee||Hitem:16922::::::::60:::::::||h[Leggings of Transcendence]||h||r",
+            "||||cffa335ee||||Hitem:16922::::::::60:::::::||||h[Leggings of Transcendence]||||h||||r",
             200
         ],
         [
             1587697185,
             "GP",
             "Athelasa-Atiesh",
-            "||cffa335ee||Hitem:17063::::::::60:::::::||h[Band of Accuria]||h||r",
+            "||||cffa335ee||||Hitem:17063::::::::60:::::::||||h[Band of Accuria]||||h||||r",
             200
         ],
         [
             1587698569,
             "GP",
             "Furealtho-Atiesh",
-            "||cffa335ee||Hitem:18423::::::::60:::::::||h[Head of Onyxia]||h||r",
+            "||||cffa335ee||||Hitem:18423::::::::60:::::::||||h[Head of Onyxia]||||h||||r",
             100
         ],
         [
@@ -966,14 +971,14 @@
             1588104225,
             "GP",
             "Ulliealt-Atiesh",
-            "||cffa335ee||Hitem:19138::::::::60:::::||h[Band of Sulfuras]||h||r",
+            "||||cffa335ee||||Hitem:19138::::::::60:::::||||h[Band of Sulfuras]||||h||||r",
             200
         ],
         [
             1588104289,
             "GP",
             "Ulliealt-Atiesh",
-            "||cffa335ee||Hitem:18878::::::::60:::::||h[Sorcerous Dagger]||h||r",
+            "||||cffa335ee||||Hitem:18878::::::::60:::::||||h[Sorcerous Dagger]||||h||||r",
             25
         ],
         [
@@ -1029,11 +1034,704 @@
             1588130198,
             "GP",
             "Jonmikej-Atiesh",
-            "||cffa335ee||Hitem:18423::::::::60:::::::||h[Head of Onyxia]||h||r",
+            "||||cffa335ee||||Hitem:18423::::::::60:::::::||||h[Head of Onyxia]||||h||||r",
             100
+        ],
+        [
+            1588294650,
+            "EP",
+            "Aninyabank-Atiesh",
+            "Decay 20%",
+            -109
+        ],
+        [
+            1588294650,
+            "EP",
+            "Aspira-Atiesh",
+            "Decay 20%",
+            -103
+        ],
+        [
+            1588294650,
+            "EP",
+            "Ignoti-Atiesh",
+            "Decay 20%",
+            -104
+        ],
+        [
+            1588294650,
+            "EP",
+            "Crowlie-Atiesh",
+            "Decay 20%",
+            -109
+        ],
+        [
+            1588294650,
+            "GP",
+            "Crowlie-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Noxin-Atiesh",
+            "Decay 20%",
+            -109
+        ],
+        [
+            1588294650,
+            "EP",
+            "Msmurder-Atiesh",
+            "Decay 20%",
+            -101
+        ],
+        [
+            1588294650,
+            "GP",
+            "Msmurder-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Rhizzoh-Atiesh",
+            "Decay 20%",
+            -101
+        ],
+        [
+            1588294650,
+            "GP",
+            "Rhizzoh-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Diala-Atiesh",
+            "Decay 20%",
+            -2
+        ],
+        [
+            1588294650,
+            "EP",
+            "Kharapos-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "EP",
+            "Athelasa-Atiesh",
+            "Decay 20%",
+            -102
+        ],
+        [
+            1588294650,
+            "GP",
+            "Athelasa-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Sbc-Atiesh",
+            "Decay 20%",
+            -105
+        ],
+        [
+            1588294650,
+            "EP",
+            "Rigel-Atiesh",
+            "Decay 20%",
+            -50
+        ],
+        [
+            1588294650,
+            "GP",
+            "Rigel-Atiesh",
+            "Decay 20%",
+            -21
+        ],
+        [
+            1588294650,
+            "EP",
+            "Seriph-Atiesh",
+            "Decay 20%",
+            -50
+        ],
+        [
+            1588294650,
+            "GP",
+            "Seriph-Atiesh",
+            "Decay 20%",
+            -21
+        ],
+        [
+            1588294650,
+            "EP",
+            "Wandrenloot-Atiesh",
+            "Decay 20%",
+            -110
+        ],
+        [
+            1588294650,
+            "EP",
+            "Blixon-Atiesh",
+            "Decay 20%",
+            -102
+        ],
+        [
+            1588294650,
+            "EP",
+            "Furealtho-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "GP",
+            "Furealtho-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Fenrayloot-Atiesh",
+            "Decay 20%",
+            -8
+        ],
+        [
+            1588294650,
+            "EP",
+            "Shackletonn-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "EP",
+            "Muzzleload-Atiesh",
+            "Decay 20%",
+            -107
+        ],
+        [
+            1588294650,
+            "GP",
+            "Muzzleload-Atiesh",
+            "Decay 20%",
+            -21
+        ],
+        [
+            1588294650,
+            "EP",
+            "Nemyhz-Atiesh",
+            "Decay 20%",
+            -111
+        ],
+        [
+            1588294650,
+            "EP",
+            "Aggravain-Atiesh",
+            "Decay 20%",
+            -101
+        ],
+        [
+            1588294650,
+            "EP",
+            "\u00D5h-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "GP",
+            "\u00D5h-Atiesh",
+            "Decay 20%",
+            -141
+        ],
+        [
+            1588294650,
+            "EP",
+            "Pilcher-Atiesh",
+            "Decay 20%",
+            -50
+        ],
+        [
+            1588294650,
+            "EP",
+            "Dacien-Atiesh",
+            "Decay 20%",
+            -102
+        ],
+        [
+            1588294650,
+            "EP",
+            "Badow-Atiesh",
+            "Decay 20%",
+            -54
+        ],
+        [
+            1588294650,
+            "GP",
+            "Badow-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Racheleka-Atiesh",
+            "Decay 20%",
+            -105
+        ],
+        [
+            1588294650,
+            "GP",
+            "Racheleka-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Aeshloot-Atiesh",
+            "Decay 20%",
+            -110
+        ],
+        [
+            1588294650,
+            "GP",
+            "Aeshloot-Atiesh",
+            "Decay 20%",
+            -41
+        ],
+        [
+            1588294650,
+            "EP",
+            "Orduni-Atiesh",
+            "Decay 20%",
+            -50
+        ],
+        [
+            1588294650,
+            "EP",
+            "Protoplast-Atiesh",
+            "Decay 20%",
+            -107
+        ],
+        [
+            1588294650,
+            "EP",
+            "Sallionsalt-Atiesh",
+            "Decay 20%",
+            -106
+        ],
+        [
+            1588294650,
+            "EP",
+            "Jonmikej-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "GP",
+            "Jonmikej-Atiesh",
+            "Decay 20%",
+            -61
+        ],
+        [
+            1588294650,
+            "EP",
+            "Perict-Atiesh",
+            "Decay 20%",
+            -50
+        ],
+        [
+            1588294650,
+            "GP",
+            "Perict-Atiesh",
+            "Decay 20%",
+            -66
+        ],
+        [
+            1588294650,
+            "EP",
+            "Milou-Atiesh",
+            "Decay 20%",
+            -107
+        ],
+        [
+            1588294650,
+            "GP",
+            "Milou-Atiesh",
+            "Decay 20%",
+            -21
+        ],
+        [
+            1588294650,
+            "EP",
+            "Ulliealt-Atiesh",
+            "Decay 20%",
+            -50
+        ],
+        [
+            1588294650,
+            "GP",
+            "Ulliealt-Atiesh",
+            "Decay 20%",
+            -46
+        ],
+        [
+            1588294650,
+            "EP",
+            "Wrenleeloot-Atiesh",
+            "Decay 20%",
+            -81
+        ],
+        [
+            1588294650,
+            "EP",
+            "Koyori-Atiesh",
+            "Decay 20%",
+            -101
+        ],
+        [
+            1588294650,
+            "EP",
+            "Risque-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "GP",
+            "Risque-Atiesh",
+            "Decay 20%",
+            -81
+        ],
+        [
+            1588294650,
+            "EP",
+            "Selectivend-Atiesh",
+            "Decay 20%",
+            -100
+        ],
+        [
+            1588294650,
+            "EP",
+            "Exanimo-Atiesh",
+            "Decay 20%",
+            -110
+        ],
+        [
+            1588296064,
+            "GP",
+            "Sbc-Atiesh",
+            "|cffa335ee|Hitem:17069::::::::60:::::::|h[Striker's Mark]|h|r",
+            100
+        ],
+        [
+            1588296460,
+            "GP",
+            "Erniescar-Atiesh",
+            "|cffa335ee|Hitem:16812::::::::60:::::::|h[Gloves of Prophecy]|h|r",
+            25
+        ],
+        [
+            1588297201,
+            "GP",
+            "Erniescar-Atiesh",
+            "|cffa335ee|Hitem:19142::::::::60:::::::|h[Fire Runed Grimoire]|h|r",
+            25
+        ],
+        [
+            1588297953,
+            "GP",
+            "\u00D5h-Atiesh",
+            "|cffa335ee|Hitem:16801::::::::60:::::::|h[Arcanist Gloves]|h|r",
+            100
+        ],
+        [
+            1588298959,
+            "GP",
+            "Risque-Atiesh",
+            "|cffa335ee|Hitem:16820::::::::60:::::::|h[Nightslayer Chestpiece]|h|r",
+            100
+        ],
+        [
+            1588298994,
+            "GP",
+            "Dacien-Atiesh",
+            "|cffa335ee|Hitem:17072::::::::60:::::::|h[Blastershot Launcher]|h|r",
+            25
+        ],
+        [
+            1588299380,
+            "GP",
+            "Rhizzoh-Atiesh",
+            "|cffa335ee|Hitem:18812::::::::60:::::::|h[Wristguards of True Flight]|h|r",
+            25
+        ],
+        [
+            1588299423,
+            "GP",
+            "Seriph-Atiesh",
+            "|cffa335ee|Hitem:18646::::::::60:::::::|h[The Eye of Divinity]|h|r",
+            100
+        ],
+        [
+            1588299840,
+            "GP",
+            "Seriph-Atiesh",
+            "|cffa335ee|Hitem:16922::::::::60:::::::|h[Leggings of Transcendence]|h|r",
+            200
+        ],
+        [
+            1588299864,
+            "GP",
+            "Selectivend-Atiesh",
+            "|cffa335ee|Hitem:16915::::::::60:::::::|h[Netherwind Pants]|h|r",
+            25
+        ],
+        [
+            1588299884,
+            "GP",
+            "Ignoti-Atiesh",
+            "|cffa335ee|Hitem:17063::::::::60:::::::|h[Band of Accuria]|h|r",
+            200
+        ],
+        [
+            1588639801,
+            "EP",
+            "Aspira-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639824,
+            "EP",
+            "Athelasa-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639835,
+            "EP",
+            "Nemyhz-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639860,
+            "EP",
+            "Noxin-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639871,
+            "EP",
+            "Rhizzoh-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639880,
+            "EP",
+            "Wandrenloot-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639897,
+            "EP",
+            "Fenrayloot-Atiesh",
+            "The Molten Core",
+            100
+        ],
+        [
+            1588639912,
+            "EP",
+            "Furealtho-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639920,
+            "EP",
+            "Ignoti-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639927,
+            "EP",
+            "Muzzleload-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639933,
+            "EP",
+            "Protoplast-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639948,
+            "EP",
+            "Blixon-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639957,
+            "EP",
+            "Milou-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639972,
+            "EP",
+            "Sallionsalt-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639981,
+            "EP",
+            "Selectivend-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588639989,
+            "EP",
+            "\u00D5h-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640003,
+            "EP",
+            "Crowlie-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640010,
+            "EP",
+            "Dacien-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640019,
+            "EP",
+            "Risque-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640025,
+            "EP",
+            "Sbc-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640035,
+            "EP",
+            "Gorrd-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640051,
+            "EP",
+            "Jonmikej-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640061,
+            "EP",
+            "Aeshloot-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640086,
+            "EP",
+            "Kharapos-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640117,
+            "EP",
+            "Aninyabank-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640124,
+            "EP",
+            "Exanimo-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640136,
+            "EP",
+            "Koyori-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640143,
+            "EP",
+            "Racheleka-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640152,
+            "EP",
+            "Msmurder-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640160,
+            "EP",
+            "Seriph-Atiesh",
+            "The Molten Core",
+            250
+        ],
+        [
+            1588640172,
+            "EP",
+            "Erniescar-Atiesh",
+            "The Molten Core",
+            200
+        ],
+        [
+            1588640265,
+            "GP",
+            "Sbc-Atiesh",
+            "|cffa335ee|Hitem:18816::::::::60:::::|h[Perdition's Blade]|h|r",
+            200
         ]
     ],
-    "timestamp": 1588109290,
+    "timestamp": 1588640351,
     "extras_p": 100,
     "realm": "Atiesh"
 }
