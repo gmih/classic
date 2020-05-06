@@ -12,7 +12,7 @@
         [
             "Aspira-Atiesh",
             779,
-            1
+            201
         ],
         [
             "Ignoti-Atiesh",
@@ -102,7 +102,7 @@
         [
             "Fenrayloot-Atiesh",
             354,
-            1
+            26
         ],
         [
             "Muzzleload-Atiesh",
@@ -2486,9 +2486,23 @@
             "Wrenleeloot-Atiesh",
             "|cffa335ee|Hitem:16954::::::::60:::::|h[Judgement Legplates]|h|r",
             200
+        ],
+        [
+            1588741208,
+            "GP",
+            "Aspira-Atiesh",
+            "|cffa335ee|Hitem:18817::::::::60:::::|h[Crown of Destruction]|h|r",
+            200
+        ],
+        [
+            1588741253,
+            "GP",
+            "Fenrayloot-Atiesh",
+            "|cffa335ee|Hitem:17107::::::::60:::::|h[Dragon's Blood Cape]|h|r",
+            25
         ]
     ],
-    "timestamp": 1588739538,
+    "timestamp": 1588741262,
     "extras_p": 100,
     "realm": "Atiesh"
 }
