@@ -26,8 +26,10 @@ LootHistory = {
 
 	getLootHistory: function (url) {
 		$.getJSON( url, function( data ) {  
-		    lh.lootHistory = data.loot;
-				LootHistory.display(lh.lootHistory);
+				lh.lootHistory = data.loot;
+				$.getJSON( '/epgp/ext-raiders.json', function( raiders ) { 
+					LootHistory.display(lh.lootHistory, raiders);
+				});
 				
         LootHistory.searchLoot(lh.searchBox.val());
 		});
@@ -37,7 +39,7 @@ LootHistory = {
 
 	},
 
-	display: function(items) {
+	display: function(items, raiders) {
 
 
 		for (var i=0; i<items.length; i++) {
@@ -56,12 +58,20 @@ LootHistory = {
 							"data-timestamp": item[0],
 							"text": LootHistory.parseDate(item[0])
 						}).appendTo(displayContainer);
-			
+
+
+						var name = LootHistory.stripName(item[2]);
+						var correctName;
+						if (raiders[name]) {
+							correctName = raiders[name];
+						} else {
+							correctName = name;
+						}
 						var displayName = $('<td>', {
 							"class": "display-name",
-							"text": LootHistory.stripName(item[2])
+							"text": correctName
 						}).appendTo(displayContainer);
-			
+
 						var displayLink = $('<td>', {
 							"class": "display-link"
 						}).appendTo(displayContainer);
@@ -90,10 +100,18 @@ LootHistory = {
 						"data-timestamp": item[0],
 						"text": LootHistory.parseDate(item[0])
 					}).appendTo(displayContainer);
-		
+
+
+					var name = LootHistory.stripName(item[1]);
+					var correctName;
+					if (raiders[name]) {
+						correctName = raiders[name];
+					} else {
+						correctName = name;
+					}
 					var displayName = $('<td>', {
 						"class": "display-name",
-						"text": LootHistory.stripName(item[1])
+						"text": correctName
 					}).appendTo(displayContainer);
 		
 					var displayLink = $('<td>', {
