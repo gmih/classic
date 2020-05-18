@@ -50,7 +50,7 @@ permalink: epgp/
         }
 
         response.json().then(function(data) {
-          getInfo(data, "#tier1-header");
+          getInfo(data, "tier1");
         });
       }
     )
@@ -70,7 +70,7 @@ permalink: epgp/
         }
 
         response.json().then(function(data) {
-          getInfo(data, "#tier2-header");
+          getInfo(data, "tier2");
         });
       }
     )
@@ -101,7 +101,7 @@ permalink: epgp/
         var pr = document.createElement("td");
         
         ep.textContent = character[1];
-        gpLink.href = "./tier1?filter=" + correctName;
+        gpLink.href = "./" + hook + "?filter=" + correctName;
         gpLink.textContent = character[2];
         gp.appendChild(gpLink);
         pr.textContent = parseFloat((character[1]/character[2]).toFixed(4));
@@ -110,7 +110,7 @@ permalink: epgp/
         tr.appendChild(ep);
         tr.appendChild(gp);
         tr.appendChild(pr);
-        document.querySelector(hook).insertAdjacentElement('afterend', tr);
+        document.querySelector("#" + hook + "-header").insertAdjacentElement('afterend', tr);
     });
   });
 }

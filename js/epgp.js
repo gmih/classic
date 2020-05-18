@@ -29,9 +29,8 @@ LootHistory = {
 				lh.lootHistory = data.loot;
 				$.getJSON( '/epgp/ext-raiders.json', function( raiders ) { 
 					LootHistory.display(lh.lootHistory, raiders);
+					LootHistory.searchLoot(lh.searchBox.val());
 				});
-				
-        LootHistory.searchLoot(lh.searchBox.val());
 		});
 
 
