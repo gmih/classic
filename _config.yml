@@ -22,4 +22,6 @@ url: "https://classic.gmihguild.com" # the base hostname & protocol for your sit
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-redirect-from
 permalink: /articles/:slug
