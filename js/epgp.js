@@ -24,9 +24,23 @@ LootHistory = {
 
 	},
 
-	getLootHistory: function (url) {
-		$.getJSON( url, function( data ) {  
-				lh.lootHistory = data.loot;
+	getLootHistory: function (instance) {
+		var url = "/epgp/rclc-history.json";
+		$.getJSON( url, function( data ) {
+			lh.lootHistory = data.filter(function(item) {
+				if (instance === "t1-loot-history") {
+					return (item.instance === "Molten Core-40 Player" || item.instance === "Onyxia's Lair-40 Player") && parseInt(item.response, 10);
+				} else if (instance === "t2-loot-history") {
+					return item.instance === "Blackwing Lair-40 Player" && parseInt(item.response, 10);
+				}
+			}).map(function(filteredItem) {
+				var timestamp = new Date(filteredItem.date + " " + filteredItem.time).getTime() / 1000;
+				return [timestamp, filteredItem.player, filteredItem.itemString, filteredItem.response];
+			}).sort(function(x, y) {
+				return x[0] - y[0];
+			})
+
+		// [timestamp, name, wowhead link thing, gp]
 				$.getJSON( '/epgp/ext-raiders.json', function( raiders ) { 
 					LootHistory.display(lh.lootHistory, raiders);
 					LootHistory.searchLoot(lh.searchBox.val());
@@ -39,8 +53,6 @@ LootHistory = {
 	},
 
 	display: function(items, raiders) {
-
-
 		for (var i=0; i<items.length; i++) {
 
 			var item = items[i];
