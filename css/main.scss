@@ -372,7 +372,7 @@ margin on the iframe, cause it breaks stuff. */
 .home-section.progression:before,
 .page .page-content:before,
 .article .page-content:before,
-.raiding .page-content:before {
+.raiding .page-content:before, .epgp-main .page-content:before, .epgp .page-content:before {
     content:"";
     display:block;
     background-image: url('../images/light2.png');
@@ -1314,19 +1314,124 @@ span.raid-meter-label {
         text-decoration: none;
     }
 }
+
+
+// Slider
+
+.tierEPGP {
+    overflow: hidden;
+}
+
+.tier-selector {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.tier-btn {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    position: relative;
+    border: 5px solid $background-color;
+    transition: opacity 0.4s ease;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &.selected {
+        opacity: 1;
+        border-color: $brand-color;
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: $headline-font-family;
+        line-height: 1;
+        background: rgba(0,0,0,0.7);
+        text-align: center;
+    }
+    
+    input {
+        display: none;
+    }
+
+    @media (max-width: 400px) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.tier-btn-1 {
+    background-image: url(../images/bosses/ragnaros.png);
+    &:before {
+        content: "MC Ony";
+    }
+}
+
+.tier-btn-2 {
+    background-image: url(../images/bosses/nefarian.png);
+    &:before {
+        content: "BWL";
+    }
+}
+
+.tier-btn-3 {
+    background-image: url(../images/bosses/cthun.png);
+    &:before {
+        content: "AQ";
+    }
+}
+
+.tier-choices-container {
+    width: 100%;
+    display: flex;
+    transition: transform 0.4s ease;
+
+}
+
+.tier-choices-container.show-tier1 {
+    transform: translateX(0%);
+}
+
+.tier-choices-container.show-tier2 {
+    transform: translateX(-100%);
+}
+
+.tier-choices-container.show-tier3 {
+    transform: translateX(-200%);
+}
+
+.tier-container {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+
+
 .tierEPGP h2 {
     font-size: 30px;
     text-align: center;
 }
 
-.tier1 {
-    width: 40%;
-
-    @media screen and (max-width: 980px) {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-}
 
 .tierEPGP table {
     width: 100%;

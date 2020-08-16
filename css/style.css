@@ -1,7 +1,9 @@
 .vertical {
     margin: 3rem 0 5rem;
 }
-
+.search-area {
+	margin-top: 25px;
+}
 .search-loot {
 	max-width: 100%;
     width: 500px;
@@ -30,5 +32,5 @@
 }
 
 .epgp .page-header {
-	padding-bottom: 0;
+	padding-bottom: 50px;
 }

@@ -32,7 +32,9 @@ LootHistory = {
 					return (item.instance === "Molten Core-40 Player" || item.instance === "Onyxia's Lair-40 Player") && parseInt(item.response, 10);
 				} else if (instance === "t2-loot-history") {
 					return item.instance === "Blackwing Lair-40 Player" && parseInt(item.response, 10);
-				}
+				} // else if (instance === "t3-loot-history") {
+				// 	return item.instance === "Blackwing Lair-40 Player" && parseInt(item.response, 10);
+				// }
 			}).map(function(filteredItem) {
 				var timestamp = new Date(filteredItem.date + " " + filteredItem.time).getTime() / 1000;
 				return [timestamp, filteredItem.player, filteredItem.itemString, filteredItem.response];

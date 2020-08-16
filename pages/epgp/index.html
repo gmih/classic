@@ -6,39 +6,81 @@ nav: yes
 permalink: epgp/
 ---
 <div class="tierEPGP">
-  <div class="tier1">
+  <div class="tier-selector">
+    <label for="tierSelector1" class="tier-btn tier-btn-1">
+      <input type="radio" name="tierSelector" id="tierSelector1" value="show-tier1">
+    </label>
+    <label for="tierSelector2" class="tier-btn tier-btn-2 selected">
+      <input type="radio" name="tierSelector" id="tierSelector2" value="show-tier2" checked>
+    </label>
+    <label for="tierSelector3" class="tier-btn tier-btn-3">
+      <input type="radio" name="tierSelector" id="tierSelector3" value="show-tier3">
+    </label>
+  </div>
+  <div class="tier-choices-container show-tier2">
+    <div id="tier-container-1" class="tier-container">
 
-    <h2><a class="tier-link" href="./tier1"><i class="fa fa-link"></i> MC/Ony EPGP</a></h2>
-    <table class="tier-table" id="tier1">
-      <tr class="tier-header" id="tier1-header">
-        <th>Character</th>
-        <th>EP</th>
-        <th>GP</th>
-        <th>PR</th>
-      </tr>
-    </table>
-    <div class="github-mark">
-      <a class="github-link" href="https://github.com/gmih/classic/blob/master/epgp/t1-loot-history.json"><img src="/images/github.png" alt=""></a>
+      <h2><a class="tier-link" href="./tier1"><i class="fa fa-link"></i> MC/Ony EPGP</a></h2>
+      <table class="tier-table" id="tier1">
+        <tr class="tier-header" id="tier1-header">
+          <th>Character</th>
+          <th>EP</th>
+          <th>GP</th>
+          <th>PR</th>
+        </tr>
+      </table>
+      <div class="github-mark">
+        <a class="github-link" href="https://github.com/gmih/classic/blob/master/epgp/t1-loot-history.json"><img src="/images/github.png" alt=""></a>
+      </div>
+    </div>
+    <div id="tier-container-2" class="tier-container">
+
+      <h2><a class="tier-link" href="./tier2"><i class="fa fa-link"></i> BWL EPGP</a></h2>
+      <table class="tier-table" id="tier2">
+        <tr class="tier-header" id="tier2-header">
+          <th>Character</th>
+          <th>EP</th>
+          <th>GP</th>
+          <th>PR</th>
+        </tr>
+      </table>
+      <div class="github-mark">
+        <a class="github-link" href="https://github.com/gmih/classic/blob/master/epgp/t2-loot-history.json"><img src="/images/github.png" alt=""></a>
+      </div>
+    </div>
+    <div id="tier-container-3" class="tier-container">
+
+      <h2><a class="tier-link" href="./tier3" style="pointer-events:none"><i class="fa fa-link" style="display:none"></i> AQ EPGP</a></h2>
+      <p style="text-align: center;">Coming Soon</p>
+      <table class="tier-table" id="tier3" style="display:none;">
+        <tr class="tier-header" id="tier3-header">
+          <th>Character</th>
+          <th>EP</th>
+          <th>GP</th>
+          <th>PR</th>
+        </tr>
+      </table>
+      <div class="github-mark">
+        <a class="github-link" href="https://github.com/gmih/classic/blob/master/epgp/t3-loot-history.json"><img src="/images/github.png" alt=""></a>
+      </div>
     </div>
   </div>
-  <div class="tier1">
 
-    <h2><a class="tier-link" href="./tier2"><i class="fa fa-link"></i> BWL EPGP</a></h2>
-    <table class="tier-table" id="tier2">
-      <tr class="tier-header" id="tier2-header">
-        <th>Character</th>
-        <th>EP</th>
-        <th>GP</th>
-        <th>PR</th>
-      </tr>
-    </table>
-    <div class="github-mark">
-      <a class="github-link" href="https://github.com/gmih/classic/blob/master/epgp/t2-loot-history.json"><img src="/images/github.png" alt=""></a>
-    </div>
-  </div>
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function(event) {
+    var choices = document.querySelectorAll('input');
+    var choiceContainer = document.querySelector('.tier-choices-container');
+    choices.forEach(function(tabSelector) {
+      tabSelector.addEventListener('change', function(e) {
+        choiceContainer.classList.remove('show-tier1', 'show-tier2', 'show-tier3');
+        choiceContainer.classList.add(e.target.value);
+        choices.forEach(function(choice) {
+          choice.parentNode.classList.remove('selected');
+        });
+        e.target.parentNode.classList.add('selected');
+      })
+    })
     // Tier 1
     fetch('/epgp/t1-loot-history.json')
     .then(
@@ -59,7 +101,7 @@ permalink: epgp/
     });
 
     // Tier 2
-    
+
     fetch('/epgp/t2-loot-history.json')
     .then(
       function(response) {
@@ -77,6 +119,26 @@ permalink: epgp/
     .catch(function(err) {
       console.log('Fetch Error :-S', err);
     });
+
+    // Tier 3
+
+    // fetch('/epgp/t3-loot-history.json')
+    // .then(
+    //   function(response) {
+    //     if (response.status !== 200) {
+    //       console.log('Looks like there was a problem. Status Code: ' +
+    //         response.status);
+    //       return;
+    //     }
+
+    //     response.json().then(function(data) {
+    //       getInfo(data, "tier3");
+    //     });
+    //   }
+    // )
+    // .catch(function(err) {
+    //   console.log('Fetch Error :-S', err);
+    // });
   })
 
   function getInfo(data, hook) {
