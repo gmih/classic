@@ -10,17 +10,18 @@ permalink: epgp/
     <label for="tierSelector1" class="tier-btn tier-btn-1">
       <input type="radio" name="tierSelector" id="tierSelector1" value="show-tier1">
     </label>
-    <label for="tierSelector2" class="tier-btn tier-btn-2 selected">
-      <input type="radio" name="tierSelector" id="tierSelector2" value="show-tier2" checked>
+    <label for="tierSelector2" class="tier-btn tier-btn-2">
+      <input type="radio" name="tierSelector" id="tierSelector2" value="show-tier2">
     </label>
-    <label for="tierSelector3" class="tier-btn tier-btn-3">
-      <input type="radio" name="tierSelector" id="tierSelector3" value="show-tier3">
+    <label for="tierSelector3" class="tier-btn tier-btn-3 selected">
+      <input type="radio" name="tierSelector" id="tierSelector3" value="show-tier3" checked>
     </label>
   </div>
-  <div class="tier-choices-container show-tier2">
+  <div class="tier-choices-container show-tier3">
     <div id="tier-container-1" class="tier-container">
 
       <h2><a class="tier-link" href="./tier1"><i class="fa fa-link"></i> MC/Ony EPGP</a></h2>
+      <p id="tier1-lastUpdated" class="last-updated"></p>
       <table class="tier-table" id="tier1">
         <tr class="tier-header" id="tier1-header">
           <th>Character</th>
@@ -36,6 +37,7 @@ permalink: epgp/
     <div id="tier-container-2" class="tier-container">
 
       <h2><a class="tier-link" href="./tier2"><i class="fa fa-link"></i> BWL EPGP</a></h2>
+      <p id="tier2-lastUpdated" class="last-updated"></p>
       <table class="tier-table" id="tier2">
         <tr class="tier-header" id="tier2-header">
           <th>Character</th>
@@ -50,9 +52,9 @@ permalink: epgp/
     </div>
     <div id="tier-container-3" class="tier-container">
 
-      <h2><a class="tier-link" href="./tier3" style="pointer-events:none"><i class="fa fa-link" style="display:none"></i> AQ EPGP</a></h2>
-      <p style="text-align: center;">Coming Soon</p>
-      <table class="tier-table" id="tier3" style="display:none;">
+      <h2><a class="tier-link" href="./tier3"><i class="fa fa-link"></i> AQ EPGP</a></h2>
+      <p id="tier3-lastUpdated" class="last-updated"></p>
+      <table class="tier-table" id="tier3">
         <tr class="tier-header" id="tier3-header">
           <th>Character</th>
           <th>EP</th>
@@ -122,23 +124,23 @@ permalink: epgp/
 
     // Tier 3
 
-    // fetch('/epgp/t3-loot-history.json')
-    // .then(
-    //   function(response) {
-    //     if (response.status !== 200) {
-    //       console.log('Looks like there was a problem. Status Code: ' +
-    //         response.status);
-    //       return;
-    //     }
+    fetch('/epgp/t3-loot-history.json')
+    .then(
+      function(response) {
+        if (response.status !== 200) {
+          console.log('Looks like there was a problem. Status Code: ' +
+            response.status);
+          return;
+        }
 
-    //     response.json().then(function(data) {
-    //       getInfo(data, "tier3");
-    //     });
-    //   }
-    // )
-    // .catch(function(err) {
-    //   console.log('Fetch Error :-S', err);
-    // });
+        response.json().then(function(data) {
+          getInfo(data, "tier3");
+        });
+      }
+    )
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
   })
 
   function getInfo(data, hook) {
@@ -174,6 +176,9 @@ permalink: epgp/
         tr.appendChild(pr);
         document.querySelector("#" + hook + "-header").insertAdjacentElement('afterend', tr);
     });
+
+    var lastUpdated = new Date(data.timestamp*1000);
+    document.querySelector("#" + hook + "-lastUpdated").textContent = "Last Updated: " + lastUpdated.toLocaleString("en-US", {timeZone: "America/Los_Angeles", year: 'numeric', month: 'long', day: 'numeric', timeZoneName: 'short', hour: 'numeric', minute: 'numeric', second: 'numeric'});
   });
 }
 </script>

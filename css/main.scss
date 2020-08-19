@@ -1367,6 +1367,7 @@ span.raid-meter-label {
         line-height: 1;
         background: rgba(0,0,0,0.7);
         text-align: center;
+        pointer-events: none;
     }
     
     input {
@@ -1424,6 +1425,11 @@ span.raid-meter-label {
     flex-shrink: 0;
 }
 
+.last-updated {
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.8;
+}
 
 
 
